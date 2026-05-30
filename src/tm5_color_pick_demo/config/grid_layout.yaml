@@ -1,0 +1,44 @@
+grid:
+  frame_id: base_link
+  x_range_m: [0.40, 0.50]
+  y_range_m: [-0.24, 0.24]
+  z_m: 0.26
+  zones:
+    zone_a:
+      name: A
+      center_m: [0.55, 0.18, 0.26]
+      slots_m:
+        - [0.55, 0.18, 0.26]
+        - [0.55, 0.24, 0.26]
+        - [0.55, 0.12, 0.26]
+    zone_b:
+      name: B
+      center_m: [0.50, 0.0, 0.26]
+      slots_m:
+        - [0.50, 0.0, 0.26]
+        - [0.50, 0.06, 0.26]
+        - [0.50, -0.06, 0.26]
+    zone_c:
+      name: C
+      center_m: [0.55, -0.18, 0.26]
+      slots_m:
+        - [0.55, -0.18, 0.26]
+        - [0.55, -0.12, 0.26]
+        - [0.55, -0.24, 0.26]
+
+cubes:
+  red:
+    model: red_cube
+    initial_pose_m_rpy:
+      xyz: [0.367, 0.133, 0.235]
+      rpy: [0.0, 0.0, 0.0]
+  yellow:
+    model: yellow_cube
+    initial_pose_m_rpy:
+      xyz: [0.367, 0.0, 0.235]
+      rpy: [0.0, 0.0, 0.0]
+  blue:
+    model: blue_cube
+    initial_pose_m_rpy:
+      xyz: [0.367, -0.133, 0.235]
+      rpy: [0.0, 0.0, 0.0]

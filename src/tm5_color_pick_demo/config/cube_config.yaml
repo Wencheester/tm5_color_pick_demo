@@ -1,0 +1,9 @@
+red:
+  model: red_cube
+  link: red_cube::link
+yellow:
+  model: yellow_cube
+  link: yellow_cube::link
+blue:
+  model: blue_cube
+  link: blue_cube::link

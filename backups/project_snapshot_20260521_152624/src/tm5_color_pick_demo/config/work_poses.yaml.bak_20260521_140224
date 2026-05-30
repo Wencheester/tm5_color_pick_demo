@@ -1,0 +1,14 @@
+work_poses:
+  work1:
+    frame_id: base_link
+    end_effector_link: tool0
+    pose:
+      position_m:
+        xyz: [0.4, 0.0, 0.8]
+      orientation:
+        status: unresolved
+        rpy_rad: null
+        xyzw: null
+    notes:
+      - This is an end-effector target pose, not a robot base spawn pose.
+      - Choose or derive orientation from the required camera/tool direction before planning motion.
