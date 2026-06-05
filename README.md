@@ -20,7 +20,9 @@ connects four layers into one workflow:
 | Material | Description |
 | --- | --- |
 | [Midterm report PDF](docs/tm5-700_midterm_report.pdf) | Presentation document describing the system design, progress, and experiment direction. |
+| [demo_5.gif](media/demo_5.gif) | Quick visual preview of the Demo 5 vision closed-loop experiment. |
 | [demo_5.mp4](media/demo_5.mp4) | Vision closed-loop experiment: camera state detection, natural-language planning, execution, and verification. |
+| [demo_6.gif](media/demo_6.gif) | Quick visual preview of the Demo 6 color sorting experiment. |
 | [demo_6.mp4](media/demo_6.mp4) | Color sorting experiment: LLM command classification, fixed color targets, execution, and final visual verification. |
 
 ## What This Project Does
@@ -74,6 +76,8 @@ Camera-based verification
 
 ## Demo 5: Vision Closed Loop
 
+![Demo 5 vision closed-loop preview](media/demo_5.gif)
+
 `demo_5` builds on `demo_4` by adding visual feedback. Before planning, the arm
 moves to the `ready` pose, reads `/tool_camera/image_raw`, detects the cube
 positions, maps camera cells to the logical grid, and writes the observed state
@@ -104,6 +108,8 @@ Check the printed `camera_state`, `current_state`, and `planned_stages` before
 entering `y`.
 
 ## Demo 6: LLM Color Sorting
+
+![Demo 6 color sorting preview](media/demo_6.gif)
 
 `demo_6` uses a separate Gazebo world with a visual 3x3 sorting table. The user
 asks for color sorting in natural language. The LLM classifies whether the
